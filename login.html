@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول | إنشاء حساب</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+    <div class="signup">
+      <form name="form2" onsubmit="return validate()">
+        <label for="chk">إنشاء حساب</label>
+        <input type="text" name="txt" placeholder="اسم المستخدم" required />
+        <input type="text" name="email" placeholder="البريد الإلكتروني" required />
+        <input type="password" name="pswd" placeholder="كلمة المرور" required />
+        <input type="password" name="pswd2" placeholder="تأكيد كلمة المرور" required />
+        <button>إنشاء حساب</button>
+        <label for="chk" style="text-decoration:underline">تسجيل الدخول؟</label>
+      </form>
+    </div>
+    <div class="login">
+      <form name="myform" onsubmit="loginFunction()" autocomplete="off">
+        <label for="chk">تسجيل الدخول</label>
+        <input type="text" name="email" id="usn" placeholder="اسم المستخدم" required />
+        <input type="password" name="pwd" id="pd" placeholder="كلمة المرور" required />
+        <button type="submit" id="pro">تسجيل الدخول</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
